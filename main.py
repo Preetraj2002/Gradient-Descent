@@ -22,6 +22,8 @@ y = data.iloc[:, 1].to_numpy()          # even though it's still unnecessary
 fig, axes = plt.subplots()              # Config. a 1 row x 1 column graph
 axes.scatter(x, y)  # Draw the points
 plt.title("Data Points")
+plt.xlabel("X")
+plt.ylabel("Y")
 plt.savefig("datapoints.png")           # Save the current graph state
 fig.delaxes(axes)                       # Discard the current graph to avoid overlapping axes issue
 
